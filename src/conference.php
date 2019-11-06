@@ -22,4 +22,8 @@ class conference_t {
     public function __construct($sponsors) {
         $this->sponsors = $sponsors;
     }
+
+    public function __toString() {
+        return __CLASS__;
+    }
 }
