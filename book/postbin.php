@@ -4,11 +4,12 @@
 
 function bin() {
     $url = "https://postb.in/api/bin";
-    $result = file_get_contents($url, false, stream_context_create([
+    $req = [
         "http" => [
             "method" => "POST",
         ]
-    ]));
+    ];
+    $result = file_get_contents($url, false, stream_context_create($req));
     return json_decode($result, true);
 }
 
@@ -20,10 +21,11 @@ function bin_req($bin_id, $req) {
 
 function bin_get($bin_id, $req_id) {
     $url = "https://postb.in/api/bin/$bin_id/req/$req_id";
-    $result = file_get_contents($url, false, stream_context_create([
+    $req = [
         "http" => [
             "method" => "GET",
         ]
-    ]));
+    ];
+    $result = file_get_contents($url, false, stream_context_create($req));
     return json_decode($result, true);
 }
