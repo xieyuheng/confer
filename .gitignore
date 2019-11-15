@@ -4,6 +4,9 @@ target
 # parcel
 .cache
 
+# js
+node_modules
+
 # emacs
 *~
 *#*
