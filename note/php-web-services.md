@@ -95,6 +95,7 @@ echo $page;
 ``` php
 <?php
 $url = "http://localhost:8000/book/method-echo.php";
+
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
 curl_exec($ch);
@@ -104,4 +105,27 @@ echo file_get_contents($url, false, stream_context_create([
         "method" => "DELETE",
     ]
 ]));
+```
+## CHAPTER 3 Headers
+
+## CHAPTER 4 Cookies
+
+## CHAPTER 5 JSON
+
+``` php
+echo json_encode(array("message" => "hello you"));
+
+$message_json = <<<END
+  { "message": "hello you" }
+END;
+
+$data = json_decode($message_json);
+var_dump($data);
+
+$obj = new stdClass();
+$obj->message = "hello you";
+echo json_encode($obj) . "\n";
+
+$data = json_decode($message_json, true);
+var_dump($data);
 ```

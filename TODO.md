@@ -1,4 +1,3 @@
-- use postbin API in php
 - clone postbin in php
 - clone postbin in nodejs
 - clone postbin in python
