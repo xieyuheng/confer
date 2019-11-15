@@ -1,0 +1,3 @@
+- post and persistence
+- login
+- basic concepts of a conference
