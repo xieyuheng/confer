@@ -1,3 +1,5 @@
-- post and persistence
+- use postbin API in php
+- clone postbin
+- post conference title and persistence
 - login
 - basic concepts of a conference
