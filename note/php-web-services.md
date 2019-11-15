@@ -89,3 +89,19 @@ $options = [
 $page = file_get_contents($url, false, stream_context_create($options));
 echo $page;
 ```
+
+### Using Other HTTP Verbs
+
+``` php
+<?php
+$url = "http://localhost:8000/book/method-echo.php";
+$ch = curl_init($url);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
+curl_exec($ch);
+
+echo file_get_contents($url, false, stream_context_create([
+    "http" => [
+        "method" => "DELETE",
+    ]
+]));
+```

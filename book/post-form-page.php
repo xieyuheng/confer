@@ -15,7 +15,11 @@
           <input type="submit" value="Go" class="pure-button pure-button-primary"/>
         </form>
       <?php else:
-      echo "New user email: " . filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+      // echo "new user email: " . filter_input(INPUT_POST, "email", FILTER_VALIDATE_EMAIL);
+      echo "new user email: " . $_POST["email"];
+      echo "<br>";
+      echo "new user name: " . $_POST["display_name"];
+      echo "<br>";
       endif; ?>
     </div>
   </body>
