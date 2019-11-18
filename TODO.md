@@ -1,3 +1,11 @@
-- post conference title and persistence
+# frontend
+# test
+# api
+- be restful
+# docs
+- [docs] api
+# db
+- use pg
+# user
 - login
-- basic concepts of a conference
+# deploy
