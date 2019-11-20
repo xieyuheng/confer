@@ -1,3 +1,4 @@
+# koa
 # db
 - node-postgres
   https://node-postgres.com/features/connecting
@@ -15,7 +16,6 @@
 - use node to rewrite parser
 - use node to implement propagator model
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-# express
 # frontend
 - using backend api at frontend
 - css and js in /views

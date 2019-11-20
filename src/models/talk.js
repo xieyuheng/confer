@@ -25,7 +25,7 @@ class talk_on_topic_t {
   console.log(talk)
 
   console.log(new talk_on_topic_t({
-    talk_id: talk.id,
+    ...talk,
     topic_id: 'programming-language',
   }))
 }
