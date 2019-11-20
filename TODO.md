@@ -1,4 +1,6 @@
 # express
+# js
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
 # db
 - node-postgres
   https://node-postgres.com/features/connecting
@@ -15,6 +17,7 @@
 # node
 - use node to rewrite parser
 - use node to implement propagator model
+  - make use of the event loop
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 # frontend
 - using backend api at frontend
