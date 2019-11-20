@@ -1,7 +1,5 @@
 "use strict"
 
-const http = require("http")
-
 const ms = require("ms")
 
 const env = require("./src/env.js")
@@ -12,9 +10,6 @@ const app = require("./src/app.js")
 //   db.cleanUp()
 // }, ms("1 min"))
 
-const server = http.createServer()
-server.on("request", app)
-
-server.listen(env.port, () => {
+app.listen(env.port, () => {
   console.log("Listening on port %s", env.port)
 })

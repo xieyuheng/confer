@@ -5,7 +5,9 @@ const express = require('express')
 const pkg = require('../../package.json')
 const env = require('../env.js')
 
-let router = express.Router()
+const Router = require('express-promise-router')
+
+let router = new Router()
 
 router.route('/')
   .get((req, res) => {
