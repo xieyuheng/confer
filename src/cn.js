@@ -1,8 +1,6 @@
-const { Pool, Client } = require('pg')
+const db = require('./db')
 
-const pool = new Pool()
-
-pool.query('SELECT * FROM employee CROSS JOIN department;', (err, res) => {
+db.query('SELECT * FROM employee CROSS JOIN department;', [], (err, res) => {
   console.log(res.rows)
-  pool.end()
+  db.end()
 })
