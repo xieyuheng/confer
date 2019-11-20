@@ -9,12 +9,6 @@ class talk_t {
   }
 }
 
-let talk = new talk_t({
-  name: "cicada language",
-  date: 1234,
-  description: "cicada language underground #1",
-})
-
 class talk_on_topic_t {
   constructor(the) {
     this.id = uuid.gen()
@@ -31,17 +25,25 @@ class talk_by_user_t {
   }
 }
 
-console.log(talk)
+{
+  let talk = new talk_t({
+    name: "cicada language",
+    date: 1234,
+    description: "cicada language underground #1",
+  })
 
-console.log(new talk_on_topic_t({
-  talk_id: talk.id,
-  topic_id: "programming-language",
-}))
+  console.log(talk)
 
-console.log(new talk_by_user_t({
-  talk_id: talk.id,
-  user_id: "xieyuheng",
-}))
+  console.log(new talk_on_topic_t({
+    talk_id: talk.id,
+    topic_id: "programming-language",
+  }))
+
+  console.log(new talk_by_user_t({
+    talk_id: talk.id,
+    user_id: "xieyuheng",
+  }))
+}
 
 module.exports = {
   talk_t
