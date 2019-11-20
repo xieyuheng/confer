@@ -1,4 +1,4 @@
-# koa
+# express
 # db
 - node-postgres
   https://node-postgres.com/features/connecting
