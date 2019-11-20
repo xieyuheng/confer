@@ -1,5 +1,5 @@
 class user_t {
-  constructor (the) {
+  constructor(the) {
     this.id = the.id
     this.name = the.name
   }
