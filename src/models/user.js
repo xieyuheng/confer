@@ -1,7 +1,7 @@
 class user_t {
   constructor(the) {
-    this.id = the.id
-    this.name = the.name
+    this.user_id = the.user_id
+    this.user_name = the.user_name
   }
 }
 

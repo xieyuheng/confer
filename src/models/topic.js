@@ -1,7 +1,7 @@
 class topic_t {
   constructor(the) {
-    this.id = the.id
-    this.name = the.name
+    this.topic_id = the.topic_id
+    this.topic_name = the.topic_name
   }
 }
 

@@ -1,18 +1,14 @@
-const uuid = require("../uuid")
-
 class talk_t {
   constructor(the) {
-    this.id = the.id
+    this.talk_id = the.talk_id
+    this.talk_name = the.talk_name
+    this.talk_description = the.talk_description
     this.user_id = the.user_id
-    this.name = the.name
-    this.date = the.date
-    this.description = the.description
   }
 }
 
 class talk_on_topic_t {
   constructor(the) {
-    this.id = uuid.gen()
     this.talk_id = the.talk_id
     this.topic_id = the.topic_id
   }
@@ -20,11 +16,10 @@ class talk_on_topic_t {
 
 {
   let talk = new talk_t({
-    id: "cicada-language-1",
-    user_id: "xieyuheng",
-    name: "cicada language",
-    date: 1234,
-    description: "cicada language underground #1",
+    talk_id: "cicada-language-1",
+    talk_name: "cicada language",
+    talk_description: "cicada language underground #1",
+    user_id: "xieyuheng",    
   })
 
   console.log(talk)
