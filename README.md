@@ -1,5 +1,7 @@
 # Confer
 
+A general conference web app.
+
 ## Usage
 
 - Prepare: `npm install`
