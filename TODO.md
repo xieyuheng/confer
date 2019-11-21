@@ -2,10 +2,11 @@
 # js
 - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
 # db
+- node-postgres run from file
+- data models
 - node-postgres
   https://node-postgres.com/features/connecting
   - what is the difference between `Client` and `Pool`?
-- data models
 - postgresql docs
   https://www.postgresql.org/docs/11/index.html
   https://www.postgresql.org/docs/11/tutorial.html

@@ -43,10 +43,24 @@ function array2obj(array) {
   return map2obj(array2map(array))
 }
 
+function rand_nat(max) {
+  return Math.floor(Math.random() * Math.floor(max))
+}
+
+function rand_member(array) {
+  let i = rand_nat(array.length)
+  return array[i]
+}
+
 module.exports = {
   range,
+
   map2obj,
   obj2map,
+
   array2map,
   array2obj,
+
+  rand_nat,
+  rand_member,
 }
