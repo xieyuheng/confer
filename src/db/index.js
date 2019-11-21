@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 const { Pool } = require('pg')
 
 const pool = new Pool()
@@ -9,11 +11,40 @@ pool.on('error', (err, client) => {
   process.exit(-1)
 })
 
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+function read_file(path) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(path, 'utf8', (err, text) => {
+      err ? reject(err) : resolve(text)
+    })
+  })
+}
+
+function query(text, params) {
+  return pool.query(text, params)
+}
+
+function end() {
+  pool.end()
+}
+
+const SQL_ROOT = __dirname + '/../../sql/'
+
+function sql(path, params) {
+  return read_file(SQL_ROOT + path)
+    .then(text => query(text, params))
+}
+
 module.exports = {
-  query: (text, params) => {
-    return pool.query(text, params)
-  },
-  end: () => {
-    pool.end()
-  },
+  wait,
+  read_file,
+
+  query,
+  end,
+
+  SQL_ROOT,
+  sql,
 }
