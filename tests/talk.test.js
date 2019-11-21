@@ -16,5 +16,6 @@ console.log(talk)
 
 console.log(new talk_on_topic_t({
   ...talk,
+  person_id: 'xieyuheng',
   topic_id: 'programming-language',
 }))

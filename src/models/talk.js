@@ -10,6 +10,7 @@ class talk_t {
 class talk_on_topic_t {
   constructor(the) {
     this.talk_id = the.talk_id
+    this.person_id = the.person_id
     this.topic_id = the.topic_id
   }
 }
