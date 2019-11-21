@@ -1,5 +1,7 @@
-# db
+- [api] be restful
 - [db] sql function file
+# sql style guide
+# db
 - postgresql docs
   https://www.postgresql.org/docs/11/index.html
   https://www.postgresql.org/docs/11/tutorial.html
@@ -22,8 +24,6 @@
 - css and js in /views
 # test
 - a simple tester
-# api
-- be restful
 # docs
 - [docs] api
 # user

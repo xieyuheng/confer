@@ -7,18 +7,6 @@ A general conference web app.
 - Prepare: `npm install`
 - Run: `node server.js`
 
-## Web App Tech Stack
-
-**No framework.**
-
-- backend
-  - nodejs
-  - postgres
-- frontend
-  - js
-  - html
-  - css
-
 ## Community
 
 Contributions are welcome, see [current TODO list](TODO.md) for tasks. <br>
