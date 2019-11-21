@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 
 function t {
-    name=$1
+    test_prog_ext node js && \
+        test_prog_ext bash sh
+}
 
-    prog=node
+function test_prog_ext {
+    prog=$1
+    ext=$2
 
-    for file in $(find . | grep "^\./tests/" | grep "\.test.js$")
+    for file in $(find . | grep "^\./tests/" | grep "\.test.*$" | grep "\.${ext}$")
     do
         echo ""
         echo "[test] $file"
