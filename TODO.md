@@ -12,8 +12,6 @@
   https://en.wikipedia.org/wiki/Database_normalization
   https://en.wikipedia.org/wiki/Denormalization
 # express
-# js
-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
 # node
 - https
 - use node to rewrite parser
@@ -21,6 +19,7 @@
   - make use of the event loop
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 # frontend
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
 - using backend api at frontend
 - css and js in /views
 # test
@@ -31,3 +30,4 @@
 - login
 # deploy
 - maybe docker
+- https
