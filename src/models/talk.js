@@ -3,7 +3,7 @@ class talk_t {
     this.talk_id = the.talk_id
     this.talk_name = the.talk_name
     this.talk_description = the.talk_description
-    this.user_id = the.user_id
+    this.person_id = the.person_id
   }
 }
 

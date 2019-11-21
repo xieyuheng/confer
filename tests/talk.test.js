@@ -9,7 +9,7 @@ let talk = new talk_t({
   talk_id: 'cicada-language-1',
   talk_name: 'cicada language',
   talk_description: 'cicada language underground #1',
-  user_id: 'xieyuheng',
+  person_id: 'xieyuheng',
 })
 
 console.log(talk)
