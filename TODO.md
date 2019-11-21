@@ -1,7 +1,5 @@
 # db
-- [db] create-table
-- [db] insert-into
-- [db] pg run from file
+- [db] sql function file
 - postgresql docs
   https://www.postgresql.org/docs/11/index.html
   https://www.postgresql.org/docs/11/tutorial.html

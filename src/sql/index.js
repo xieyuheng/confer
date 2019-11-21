@@ -9,7 +9,6 @@ const wait = ms => new Promise(resolve => setTimeout(resolve, ms))
 function read(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8', (err, text) => {
-      console.log(err)
       if (err !== null) {
         reject(err)
       } else {
