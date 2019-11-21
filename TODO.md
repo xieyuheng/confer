@@ -1,4 +1,5 @@
 - [api] be restful
+  - how it feels like to build api on these `.sql` files
 - [db] sql function file
 # sql style guide
 # db
