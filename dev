@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+function t {
+    name=$1
+
+    prog=node
+
+    for file in $(find . | grep "^\./tests/" | grep "\.test.js$")
+    do
+        echo ""
+        echo "[test] $file"
+        if ! time $prog $file
+        then
+            exit 1
+        fi
+    done
+}
+
+function main {
+    for TASK in $@
+    do
+        $TASK
+    done
+}
+
+main $@

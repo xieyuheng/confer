@@ -1,15 +1,18 @@
-const test = require('ava')
+const assert = require('assert')
 
 const db = require('../src/db')
 
-test("db.query", async t => {
+{
+  (async () => {
 
-  let row = await db
-      .query('SELECT NOW()')
-      .then((res) => res.rows[0])
-      .catch(e => console.error(e.stack))
+    let row = await db
+        .query('SELECT NOW()')
+        .then((res) => res.rows[0])
+        .catch(e => console.error(e.stack))
 
-  t.true(row.now instanceof Date)
+    await db.end()
 
-  t.pass()
-})
+    assert(row.now instanceof Date)
+
+  })()
+}
