@@ -1,6 +1,3 @@
-# express
-# js
-- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
 # db
 - [db] create-table
 - [db] insert-into
@@ -13,6 +10,9 @@
 - learning
   https://en.wikipedia.org/wiki/Database_normalization
   https://en.wikipedia.org/wiki/Denormalization
+# express
+# js
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous
 # node
 - https
 - use node to rewrite parser
