@@ -15,6 +15,7 @@
 # node
 - https
 - use node to rewrite parser
+- and sentence generator
 - use node to implement propagator model
   - make use of the event loop
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
