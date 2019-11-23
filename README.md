@@ -20,4 +20,4 @@ Contributions are welcome, see [current TODO list](TODO.md) for tasks. <br>
 
 ## License
 
-- [GPLv3](LICENSE)
+- [All right reserve](LICENSE)
