@@ -25,6 +25,7 @@ function main {
     do
         "$TASK"
     done
+    exit
 }
 
 main "$@"
