@@ -2,7 +2,6 @@ const assert = require('assert')
 
 const nanoid = require('nanoid')
 
-const util = require('../src/util')
 const db = require('../src/db')
 
 {
