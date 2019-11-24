@@ -1,1 +1,1 @@
-Do something meaningful together as a group.
+Do something meaningful together.
