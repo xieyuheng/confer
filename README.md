@@ -20,4 +20,4 @@ Contributions are welcome, see [current TODO list](TODO.md) for tasks. <br>
 
 ## License
 
-- [All rights reserve.](LICENSE)
+- [All rights reserved.](LICENSE)
